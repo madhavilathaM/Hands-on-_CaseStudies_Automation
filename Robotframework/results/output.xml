@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.9.5 on win32)" generated="20221203 15:15:09.377" rpa="false" schemaversion="3">
+<suite id="s1" name="Orderpizza" source="C:\2#MadhaviLatha\Robotframework\Testcases\orderpizza.robot">
+<test id="s1-t1" name="User Should open Browser" line="7">
+<kw name="Opening Broswer" library="orderpizza">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221203 15:15:09.834" level="INFO">Opening browser 'chrome' to base url 'https://dineshvelhal.github.io/testautomation-playground/login.html'.</msg>
+<status status="PASS" starttime="20221203 15:15:09.834" endtime="20221203 15:15:14.946"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221203 15:15:14.946" endtime="20221203 15:15:15.075"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221203 15:15:25.085" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221203 15:15:15.075" endtime="20221203 15:15:25.085"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:09.834" endtime="20221203 15:15:25.085"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:09.834" endtime="20221203 15:15:25.085"/>
+</test>
+<test id="s1-t2" name="User Should click on Login" line="9">
+<kw name="Enter Username" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:25.085" endtime="20221203 15:15:25.131"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${username}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:25.131" level="INFO">Clicking element 'xpath = //*[@id='user']'.</msg>
+<status status="PASS" starttime="20221203 15:15:25.131" endtime="20221203 15:15:25.221"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>${userdata}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:25.226" level="INFO">Typing text 'admin' into text field 'xpath = //*[@id='user']'.</msg>
+<status status="PASS" starttime="20221203 15:15:25.221" endtime="20221203 15:15:25.325"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>username entered</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:25.325" endtime="20221203 15:15:25.325"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:25.085" endtime="20221203 15:15:25.325"/>
+</kw>
+<kw name="Enter Password" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:25.325" endtime="20221203 15:15:25.351"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:25.356" level="INFO">Clicking element 'xpath = //*[@id='password']'.</msg>
+<status status="PASS" starttime="20221203 15:15:25.351" endtime="20221203 15:15:25.426"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${passwordata}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:25.426" level="INFO">Typing password into text field 'xpath = //*[@id='password']'.</msg>
+<msg timestamp="20221203 15:15:25.476" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221203 15:15:25.526" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221203 15:15:25.426" endtime="20221203 15:15:25.526"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>password entered</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:25.526" endtime="20221203 15:15:25.526"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:25.325" endtime="20221203 15:15:25.526"/>
+</kw>
+<kw name="Click on login" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Login}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:25.526" endtime="20221203 15:15:25.556"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:25.556" level="INFO">Clicking button 'xpath = //*[@id='login']'.</msg>
+<status status="PASS" starttime="20221203 15:15:25.556" endtime="20221203 15:15:27.226"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login Clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:27.226" endtime="20221203 15:15:27.226"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:25.526" endtime="20221203 15:15:27.226"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:25.085" endtime="20221203 15:15:27.226"/>
+</test>
+<test id="s1-t3" name="User Should Select Pizza" line="13">
+<kw name="Select pizza size" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${pizzasize}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:27.234" endtime="20221203 15:15:27.256"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${pizzasize}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:27.266" level="INFO">Clicking button 'xpath = //*[@value='MEDIUM']'.</msg>
+<status status="PASS" starttime="20221203 15:15:27.256" endtime="20221203 15:15:27.342"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Medium size Slected</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:27.342" endtime="20221203 15:15:27.342"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:27.234" endtime="20221203 15:15:27.342"/>
+</kw>
+<kw name="Select flavour" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${flavor}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:27.342" endtime="20221203 15:15:27.366"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${flavor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:27.366" level="INFO">Clicking element 'xpath = //*[@id='select_flavor']'.</msg>
+<status status="PASS" starttime="20221203 15:15:27.366" endtime="20221203 15:15:27.456"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${flavor}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221203 15:15:27.461" level="INFO">Selecting options from selection list 'xpath = //*[@id='select_flavor']' by index 2.</msg>
+<status status="PASS" starttime="20221203 15:15:27.456" endtime="20221203 15:15:27.635"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:27.342" endtime="20221203 15:15:27.635"/>
+</kw>
+<kw name="Select Sauce" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${sauce}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:27.635" endtime="20221203 15:15:27.651"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${sauce}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:27.651" level="INFO">Clicking button 'xpath = //*[@id='rad_buffalo']'.</msg>
+<status status="PASS" starttime="20221203 15:15:27.651" endtime="20221203 15:15:27.746"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Sauce selected</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:27.746" endtime="20221203 15:15:27.746"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:27.635" endtime="20221203 15:15:27.746"/>
+</kw>
+<kw name="Select Toppings" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Toppings}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:27.746" endtime="20221203 15:15:27.766"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Toppings}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:27.766" level="INFO">Clicking button 'xpath = //*[@id='onions']'.</msg>
+<status status="PASS" starttime="20221203 15:15:27.766" endtime="20221203 15:15:27.842"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Toppings</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:27.842" endtime="20221203 15:15:27.856"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:27.746" endtime="20221203 15:15:27.856"/>
+</kw>
+<kw name="Select Quantity" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${quantity}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:27.856" endtime="20221203 15:15:27.878"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${quantity}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:27.878" level="INFO">Clicking button 'xpath = //*[@id='quantity']'.</msg>
+<status status="PASS" starttime="20221203 15:15:27.878" endtime="20221203 15:15:27.955"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${quantity}</arg>
+<arg>3</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:27.966" level="INFO">Typing text '3' into text field 'xpath = //*[@id='quantity']'.</msg>
+<status status="PASS" starttime="20221203 15:15:27.955" endtime="20221203 15:15:28.095"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:27.856" endtime="20221203 15:15:28.095"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:27.234" endtime="20221203 15:15:28.095"/>
+</test>
+<test id="s1-t4" name="User Should Click on Addto cart" line="20">
+<kw name="Click on Addto Cart" library="orderpizza">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${addtocart}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221203 15:15:28.095" endtime="20221203 15:15:28.126"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addtocart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221203 15:15:28.126" level="INFO">Clicking button 'xpath = //*[@id='submit_button']'.</msg>
+<status status="PASS" starttime="20221203 15:15:28.126" endtime="20221203 15:15:28.226"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Add to cart Cicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:28.226" endtime="20221203 15:15:28.226"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:28.095" endtime="20221203 15:15:28.226"/>
+</kw>
+<kw name="Printing Meassage" library="orderpizza">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221203 15:15:28.226" endtime="20221203 15:15:28.226"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221203 15:15:58.231" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20221203 15:15:28.226" endtime="20221203 15:15:58.231"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:28.226" endtime="20221203 15:15:58.231"/>
+</kw>
+<status status="PASS" starttime="20221203 15:15:28.095" endtime="20221203 15:15:58.231"/>
+</test>
+<status status="PASS" starttime="20221203 15:15:09.386" endtime="20221203 15:15:58.231"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Orderpizza">Orderpizza</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

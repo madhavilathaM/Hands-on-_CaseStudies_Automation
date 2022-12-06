@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.9.5 on win32)" generated="20221204 21:52:28.341" rpa="false" schemaversion="3">
+<suite id="s1" name="Orangehrmpra" source="C:\2#MadhaviLatha\Robotframework\orangehrmpra.robot">
+<test id="s1-t1" name="User able to login page" line="50">
+<kw name="Open UrL">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221204 21:52:28.707" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20221204 21:52:28.706" endtime="20221204 21:52:34.527"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221204 21:52:44.542" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221204 21:52:34.527" endtime="20221204 21:52:44.542"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221204 21:52:44.542" endtime="20221204 21:52:44.669"/>
+</kw>
+<status status="PASS" starttime="20221204 21:52:28.706" endtime="20221204 21:52:44.669"/>
+</kw>
+<kw name="Login page">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221204 21:52:44.671" endtime="20221204 21:52:44.699"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${username}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221204 21:52:44.699" level="INFO">Clicking element 'xpath = //*[@class='oxd-input oxd-input--active']'.</msg>
+<status status="PASS" starttime="20221204 21:52:44.699" endtime="20221204 21:52:44.785"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>${data1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221204 21:52:44.787" level="INFO">Typing text 'Admin' into text field 'xpath = //*[@class='oxd-input oxd-input--active']'.</msg>
+<status status="PASS" starttime="20221204 21:52:44.785" endtime="20221204 21:52:44.939"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221204 21:52:44.940" level="INFO">Clicking element 'xpath = //*[@type='password']'.</msg>
+<status status="PASS" starttime="20221204 21:52:44.939" endtime="20221204 21:52:44.995"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${data2}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221204 21:52:44.997" level="INFO">Typing password into text field 'xpath = //*[@type='password']'.</msg>
+<msg timestamp="20221204 21:52:45.040" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221204 21:52:45.100" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221204 21:52:44.995" endtime="20221204 21:52:45.100"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${login}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221204 21:52:45.100" endtime="20221204 21:52:45.116"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221204 21:52:45.117" level="INFO">Clicking button 'xpath = //*[@type='submit']'.</msg>
+<status status="PASS" starttime="20221204 21:52:45.116" endtime="20221204 21:52:45.206"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>user loggged in</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221204 21:52:45.207" endtime="20221204 21:52:45.207"/>
+</kw>
+<status status="PASS" starttime="20221204 21:52:44.670" endtime="20221204 21:52:45.208"/>
+</kw>
+<status status="PASS" starttime="20221204 21:52:28.705" endtime="20221204 21:52:45.209"/>
+</test>
+<test id="s1-t2" name="Recriutment" line="53">
+<kw name="Recruitment link">
+<kw name="Click on Side menu">
+<arg>${recriutment}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221204 21:52:45.214" endtime="20221204 21:52:46.959"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221204 21:52:46.961" level="INFO">Clicking link 'xpath = //*[@href='/web/index.php/recruitment/viewRecruitmentModule']'.</msg>
+<status status="PASS" starttime="20221204 21:52:46.960" endtime="20221204 21:52:48.280"/>
+</kw>
+<status status="PASS" starttime="20221204 21:52:45.213" endtime="20221204 21:52:48.280"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Recritment clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221204 21:52:48.280" endtime="20221204 21:52:48.281"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221204 21:52:48.282" endtime="20221204 21:52:49.231"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221204 21:52:49.232" level="INFO">Clicking element 'xpath = //*[@class='oxd-table-card'][3]/div/div/div/div/label/span/i'.</msg>
+<status status="PASS" starttime="20221204 21:52:49.231" endtime="20221204 21:52:49.297"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221204 21:53:19.308" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20221204 21:52:49.297" endtime="20221204 21:53:19.308"/>
+</kw>
+<status status="PASS" starttime="20221204 21:52:45.213" endtime="20221204 21:53:19.308"/>
+</kw>
+<status status="PASS" starttime="20221204 21:52:45.212" endtime="20221204 21:53:19.310"/>
+</test>
+<status status="PASS" starttime="20221204 21:52:28.343" endtime="20221204 21:53:19.312"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Orangehrmpra">Orangehrmpra</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
